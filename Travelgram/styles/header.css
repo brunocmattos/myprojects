@@ -8,7 +8,7 @@ header .container {
   align-items: center;
 }
 
-header #profile {
+#profile {
   display: flex;
   gap: 32px;
   align-items: center;
