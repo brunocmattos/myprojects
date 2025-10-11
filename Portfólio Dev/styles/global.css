@@ -22,12 +22,12 @@
 
   /* Tipografia */
   --font-family-asap: "Asap", sans-serif;
-  --font-family-inconsolata: "Inconsolata", monospace;;
-  --font-family-maven-pro: "Maven Pro", sans-serif;;
+  --font-family-inconsolata: "Inconsolata", monospace;
+  --font-family-maven-pro: "Maven Pro", sans-serif;
   --title-lg: 700 56px/120% var(--font-family-asap);
-  --title-sm: 700 24px/120% var(--font-family-asap);
+  --title-md: 700 24px/120% var(--font-family-asap);
   --title-sm: 700 16px/120% var(--font-family-asap);
-  --subtitile: 400 20px/120% var(--font-family-inconsolata);
+  --subtitle: 400 20px/120% var(--font-family-inconsolata);
   --text-md: 400 16px/140% var(--font-family-maven-pro);
   --text-sm: 400 14px/140% var(--font-family-maven-pro);
 }
@@ -118,9 +118,15 @@
   transform: translateX(-50%);
 }
 
+main {
+  background-color: var(--gray-500);
+}
+
 #projects {
   background-color: var(--gray-500);
   height: 917px;
+  max-width: 1024px;
+  margin-inline: auto;
 }
 
 #services {
@@ -138,4 +144,52 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
+}
+
+.projects-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    margin-top: 72px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    color: var(--gray-100);
+  }
+}
+
+.projects-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 56px;
+}
+
+.card-project {
+  background-color: var(--gray-400);
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-project:hover {
+  border: 1px solid var(--gray-100);
+}
+
+.card-project img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.card-project span {
+  color: var(--gray-100);
+}
+
+.card-project p {
+  color: var(--gray-200);
 }

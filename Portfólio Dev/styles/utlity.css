@@ -6,6 +6,10 @@
   font: var(--title-sm);
 }
 
+.title-md {
+  font: var(--title-md);
+}
+
 .subtitle {
   font: var(--subtitle);
 }
