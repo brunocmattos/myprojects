@@ -44,7 +44,6 @@
   overflow: hidden;
 }
 
-/* --- CONTEÚDO CENTRAL --- */
 #intro .content {
   max-width: 800px;
   padding: 0 20px;
@@ -62,7 +61,6 @@
   }
 }
 
-/* --- PERFIL --- */
 .profile {
   position: relative;
   display: inline-block;
