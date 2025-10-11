@@ -117,3 +117,25 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+#projects {
+  background-color: var(--gray-500);
+  height: 917px;
+}
+
+#services {
+  background-color: var(--gray-600);
+  height: 480px;
+}
+
+#contact {
+  position: relative;
+  height: 787px;
+  background: url("../assets/Background_Contacts.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
