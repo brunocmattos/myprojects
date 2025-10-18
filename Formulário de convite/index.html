@@ -19,10 +19,8 @@
             <h1>Festivite</h1>
             <p>Crie um convite digital para o seu evento</p>
           </div>
-        </header>
-
+        </header>        
         <img src="assets/Background.png" alt="">
-
       </div>
     </aside>
 
@@ -32,27 +30,31 @@
 
         <form method="post" enctype="multipart/form-data">
           <fieldset class="about">
-            <legend>Sobre o evento</legend>
+            <div class="flex legend-title">
+              <img src="assets/icons/calendar.svg" alt="">
+              <legend>Sobre o evento</legend>              
+            </div>
 
             <div class="input-wrapper">
               <label for="title">Título</label>
               <input type="text" name="title" id="title" placeholder="Nome do evento">
             </div>
 
-            <div class="flex">
-              <div class="input-wrapper flex-1">
+            <div class="grid grid-cols2">
+
+              <div class="input-wrapper">
                 <label for="inicio">Início</label>
-                <input type="date" name="inicio" id="inicio">
+                <input type="datetime-local" name="inicio" id="inicio" placeholder="DD/MM/AAAA, --:--">
               </div>
 
-              <div class="input-wrapper flex 2">
+              <div class="input-wrapper">
                 <label for="fim">Fim</label>
-                <input type="date" name="fim" id="fim">
+                <input type="datetime-local" name="fim" id="fim" placeholder="DD/MM/AAAA, --:--">
               </div>
             </div>
 
 
-            <div class="flex">
+            <div class="grid grid-cols2">
 
               <div class="radio-wrapper flex-1">
                 <div class="flex">
@@ -80,13 +82,16 @@
 
             <div class="textarea-wrapper">
               <label for="description">Descrição</label>
-              <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" rows="6"></textarea>
             </div>
 
           </fieldset>
 
           <fieldset class="customize">
-            <legend>Personalização</legend>
+            <div class="flex legend-title">
+              <img src="assets/icons/paintbrush-vertical.svg" alt="">
+              <legend>Personalização</legend>
+            </div>
 
             <div class="color-wrapper">
               <label for="color">Cor principal</label>
@@ -108,7 +113,7 @@
 
             <div class="theme-wrapper">
               <label for="tema">Tema do evento</label>
-              <div class="grid grid-cols4">
+              <div class="grid grid-cols4 gap8">
 
                 <div class="theme-inner">
                   <img src="assets/aniversario.png" alt="">
@@ -184,35 +189,41 @@
               </div>
             </div>
 
-            <div class="flex">
-              <div class="checkbox-wrapper flex-1">
+            <div class="grid grid-cols2">
+              <div class="checkbox-wrapper">
                 <label for="estilo" class="switch">Estilo</label>
                 <input type="checkbox" name="estilo">
                 <span class="slider round"></span>
               </div>
   
-              <div class="file-wrapper flex-2">
+              <div class="file-wrapper">
                 <label for="capa">Foto de capa</label>
-                <input type="file" nome="capa">
+                <div>
+                  <input type="file" nome="capa">
+                </div>
               </div>
             </div>
           </fieldset>
 
           <fieldset class="contato">
-            <legend>Dados para contato</legend>
+            <div class="div flex legend-title">
+              <img src="assets/icons/contact.svg" alt="">
+              <legend>Dados para contato</legend>
+            </div>
 
             <div class="input-wrapper">
               <label for="fullname">Nome</label>
               <input type="text" name="fullname" id="fullname" placeholder="Nome completo" required>
             </div>
 
-            <div class="flex">
+            <div class="grid grid-cols2">
 
-              <div class="input-wrapper flex-1">
+              <div class="input-wrapper">
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" placeholder="exemplo@email.com">
               </div>
-              <div class="input-wrapper flex-2">
+
+              <div class="input-wrapper">
                 <label for="telefone">Telefone</label>
                 <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999">
               </div>
@@ -220,7 +231,7 @@
 
           </fieldset>
 
-          <div class="termos-wrapper grid">
+          <div class="termos-wrapper">
             <div class="flex">
               <input type="checkbox" name="term-cond">
               <label for="term-cond">Li e concordo com os <a href="">Termos e Condições</a> e com a <a href="#">Politica de Privacidade</a></label>
@@ -235,9 +246,9 @@
             </div>
           </div>
 
-          <div class="button-wrapper">
+          <div class="button-wrapper flex">
             <img src="assets/icons/ticket.svg" alt="">
-            <button type="submit">Gerar convite</button>
+            <button type="submit" name="button-submit">Gerar convite</button>
           </div>
         </form>
       </div>  

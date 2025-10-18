@@ -54,7 +54,7 @@
 
 body {
   overflow: hidden;
-  background-color: var(--shape-body);
+  background-color: var(--shape-background);
   font: var(--body-sm);
 }
 
@@ -74,13 +74,22 @@ body {
   display: grid;
 }
 
+.grid-cols2 {
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+}
+
 .grid-cols4 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.gap8 {
+  gap: .5rem;
+}
+
 h1 {
   font: var(--logo);
-  color: var(--danger);
+  color: var(--pink);
 }
 
 h2 {
