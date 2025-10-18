@@ -104,8 +104,10 @@ label {
   font: var(--body-sm)
 }
 
-input {
+input, textarea {
   font: var(--body-md);
+  background-color: var(--input-base);
+  margin-top: .75rem;
   &::placeholder {
     color: var(--input-placeholder);
   }

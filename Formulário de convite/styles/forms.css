@@ -19,17 +19,16 @@ fieldset {
   gap: 1rem;
 }
 
-input, textarea {
+input[type="text"], input[type="datetime-local"], input[type="email"], input[type="tel"], textarea {
   width: 100%;
   padding-block: .8125rem;
   padding-inline: 1rem;
+  border-radius: .75rem;
+  border: 1px solid var(--input-stroke);
+}
 
-  margin-top: .75rem;
-
-
-  &[type="checkbox"] {
-    width: 1.5rem;
-  }
+input[type="color"] {
+  width: 100%;
 }
 
 .theme-inner {
