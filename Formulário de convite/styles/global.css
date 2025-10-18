@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   /* Brand Colors */
   --brand-light: #59B2FF;
@@ -44,4 +50,70 @@
   --body-md: 1rem var(--font-family-opens-sans);
   --body-sm: 0.875rem var(--font-family-opens-sans);
   --body-xs: 0.75rem var(--font-family-opens-sans);
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--shape-body);
+  font: var(--body-sm);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+h1 {
+  font: var(--logo);
+  color: var(--danger);
+}
+
+h2 {
+  font: var(--heading-md);
+}
+
+legend {
+  font: var(--heading-sm);
+}
+
+label {
+  font: var(--body-sm)
+}
+
+input {
+  font: var(--body-md);
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
+}
+
+h2, legend, button {
+  color: var(--text-heading);
+}
+
+label, p {
+  color: var(--text-body);
+}
+
+button {
+  font: 600 1rem var(--text-heading);
+}
+
+a {
+  color: var(--brand-light);
 }

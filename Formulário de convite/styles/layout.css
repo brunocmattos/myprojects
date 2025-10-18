@@ -1,0 +1,28 @@
+#app {
+    display: grid;
+    grid-template-columns: 31.25% 68.75%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    overflow: auto;
+    padding: 4rem;
+    
+
+    & .main-container {
+        max-width: 35rem;
+        margin-right: auto;
+    }
+}
+
+aside {
+    overflow: hidden;
+    padding: 4rem;
+    
+    & .aside-container {
+        max-width: 25rem;
+        max-height: 100vh;
+    }
+}
